@@ -94,10 +94,10 @@ policy "allowed-providers" {
     #enforcement_level = "advisory"
 #}
 #
-#policy "require-all-resources-from-pmr" {
-    #source = "./require-all-resources-from-pmr.sentinel"
-    #enforcement_level = "hard-mandatory"
-#}
+policy "require-all-resources-from-pmr" {
+    source = "./require-all-resources-from-pmr.sentinel"
+    enforcement_level = "hard-mandatory"
+}
 #
 #policy "restrict-databricks-clusters" {
     #source = "./restrict-databricks-clusters.sentinel"
