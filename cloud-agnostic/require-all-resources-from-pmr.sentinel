@@ -49,8 +49,9 @@ if length(rootModuleResources) > 0 and not tfrun.is_destroy {
 
 # Main rule
 validated = tfrun.is_destroy or
-            (length(violatingMCs) is 0 and
-            length(rootModuleResources) is 0)
+            (length(violatingMCs) is 0
+            #(length(violatingMCs) is 0 and
+            #length(rootModuleResources) is 0)
 main = rule {
  validated is true
 }
